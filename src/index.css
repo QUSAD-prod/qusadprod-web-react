@@ -4,42 +4,42 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf') format('truetype');
+  src: url('@/assets/fonts/Inter-Light.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf') format('truetype');
+  src: url('@/assets/fonts/Inter-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf') format('truetype');
+  src: url('@/assets/fonts/Inter-Medium.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf') format('truetype');
+  src: url('@/assets/fonts/Inter-SemiBold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf') format('truetype');
+  src: url('@/assets/fonts/Inter-Bold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('/fonts/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf') format('truetype');
+  src: url('@/assets/fonts/Inter-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -47,21 +47,21 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPQ.ttf') format('truetype');
+  src: url('@/assets/fonts/JetBrainsMono-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8-qxjPQ.ttf') format('truetype');
+  src: url('@/assets/fonts/JetBrainsMono-Medium.woff2') format('woff2');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8FqtjPQ.ttf') format('truetype');
+  src: url('@/assets/fonts/JetBrainsMono-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -69,35 +69,35 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf') format('truetype');
+  src: url('@/assets/fonts/Manrope-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_F.ttf') format('truetype');
+  src: url('@/assets/fonts/Manrope-Medium.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_F.ttf') format('truetype');
+  src: url('@/assets/fonts/Manrope-SemiBold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_F.ttf') format('truetype');
+  src: url('@/assets/fonts/Manrope-Bold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf') format('truetype');
+  src: url('@/assets/fonts/Manrope-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -105,56 +105,56 @@
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url('/fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvao4CP.ttf') format('truetype');
+  src: url('@/assets/fonts/Raleway-Thin.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url('/fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaooCP.ttf') format('truetype');
+  src: url('@/assets/fonts/Raleway-ExtraLight.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEooCP.ttf') format('truetype');
+  src: url('@/assets/fonts/Raleway-Light.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf') format('truetype');
+  src: url('@/assets/fonts/Raleway-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf') format('truetype');
+  src: url('@/assets/fonts/Raleway-Medium.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCP.ttf') format('truetype');
+  src: url('@/assets/fonts/Raleway-SemiBold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf') format('truetype');
+  src: url('@/assets/fonts/Raleway-Bold.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('/fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf') format('truetype');
+  src: url('@/assets/fonts/Raleway-ExtraBold.woff2') format('woff2');
 }
 
 :root {

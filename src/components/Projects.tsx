@@ -5,7 +5,7 @@ import { t } from '../utils/i18n';
 import type { Project } from '../types';
 import './Projects.css';
 
-import defaultIcon from '@/assets/projects/default.png';
+import defaultIcon from '@/assets/images/projects/default.png';
 
 
 // Утилита для извлечения года из периода

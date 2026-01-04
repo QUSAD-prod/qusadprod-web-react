@@ -1,15 +1,15 @@
 import type { SiteData } from '../types';
-import airportBoardIcon from '@/assets/projects/airport-board.png';
-import blablacarLikeIcon from '@/assets/projects/blablacar-like.png';
-import chatgptClientIcon from '@/assets/projects/chatgpt-client.png';
-import cryptoTerminalIcon from '@/assets/projects/crypto-terminal.png';
-import diarySchoolIcon from '@/assets/projects/diary-school.png';
-import grandMobileIcon from '@/assets/projects/grand-mobile.png';
-import nftGameIcon from '@/assets/projects/nft-game.png';
-import quizGamesIcon from '@/assets/projects/quiz-games.png';
-import referenceBooksIcon from '@/assets/projects/reference-books.png';
-import sleepyAlarmIcon from '@/assets/projects/sleepy-alarm.png';
-import weatherAppIcon from '@/assets/projects/weather-app.png';
+import airportBoardIcon from '@/assets/images/projects/airport-board.png';
+import blablacarLikeIcon from '@/assets/images/projects/blablacar-like.png';
+import chatgptClientIcon from '@/assets/images/projects/chatgpt-client.png';
+import cryptoTerminalIcon from '@/assets/images/projects/crypto-terminal.png';
+import diarySchoolIcon from '@/assets/images/projects/diary-school.png';
+import grandMobileIcon from '@/assets/images/projects/grand-mobile.png';
+import nftGameIcon from '@/assets/images/projects/nft-game.png';
+import quizGamesIcon from '@/assets/images/projects/quiz-games.png';
+import referenceBooksIcon from '@/assets/images/projects/reference-books.png';
+import sleepyAlarmIcon from '@/assets/images/projects/sleepy-alarm.png';
+import weatherAppIcon from '@/assets/images/projects/weather-app.png';
 
 export const siteData: SiteData = {
   personalInfo: {
