@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import { t } from '../utils/i18n';

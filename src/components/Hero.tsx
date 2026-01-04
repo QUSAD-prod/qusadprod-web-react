@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { t } from '../utils/i18n';
 import './Hero.css';
 
 export function Hero() {
