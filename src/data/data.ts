@@ -1,4 +1,15 @@
 import type { SiteData } from '../types';
+import airportBoardIcon from '@/assets/projects/airport-board.png';
+import blablacarLikeIcon from '@/assets/projects/blablacar-like.png';
+import chatgptClientIcon from '@/assets/projects/chatgpt-client.png';
+import cryptoTerminalIcon from '@/assets/projects/crypto-terminal.png';
+import diarySchoolIcon from '@/assets/projects/diary-school.png';
+import grandMobileIcon from '@/assets/projects/grand-mobile.png';
+import nftGameIcon from '@/assets/projects/nft-game.png';
+import quizGamesIcon from '@/assets/projects/quiz-games.png';
+import referenceBooksIcon from '@/assets/projects/reference-books.png';
+import sleepyAlarmIcon from '@/assets/projects/sleepy-alarm.png';
+import weatherAppIcon from '@/assets/projects/weather-app.png';
 
 export const siteData: SiteData = {
   personalInfo: {
@@ -73,7 +84,7 @@ export const siteData: SiteData = {
       projects: [
         {
           id: 'airport-board',
-          icon: '/images/projects/airport-board.png',
+          icon: airportBoardIcon,
           title: {
             ru: 'Tiksi Avia - Табло аэропорта',
             en: 'Tiksi Avia - Airport display board',
@@ -109,7 +120,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'weather-app',
-          icon: '/images/projects/weather-app.png',
+          icon: weatherAppIcon,
           title: {
             ru: 'Tiksi Weather - Приложение погоды',
             en: 'Tiksi Weather - Weather application',
@@ -145,7 +156,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'reference-books',
-          icon: '/images/projects/reference-books.png',
+          icon: referenceBooksIcon,
           title: {
             ru: 'Yana Guide - Справочник Верхоянского района',
             en: 'Yana Guide - Verkhoyansk District Directory',
@@ -181,7 +192,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'quiz-games',
-          icon: '/images/projects/quiz-games.png',
+          icon: quizGamesIcon,
           title: {
             ru: 'ЯАССР 100 - Викторина к 100-летию Образования Якутской АССР',
             en: 'YASSR 100 - Quiz for the 100th Anniversary of Yakut ASSR Formation',
@@ -217,7 +228,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'diary-school',
-          icon: '/images/projects/diary-school.png',
+          icon: diarySchoolIcon,
           title: {
             ru: 'Где Дневник - Оболочка для электронного дневника',
             en: 'Gde Dnevnik - Electronic diary wrapper',
@@ -254,7 +265,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'sleepy-alarm',
-          icon: '/images/projects/sleepy-alarm.png',
+          icon: sleepyAlarmIcon,
           title: {
             ru: 'Sleepy - Новый подход ко сну',
             en: 'Sleepy - A New Approach to Sleep',
@@ -291,7 +302,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'chatgpt-client',
-          icon: '/images/projects/chatgpt-client.png',
+          icon: chatgptClientIcon,
           title: {
             ru: 'Photo AI Mentor - ChatGPT клиент с фотосканированием',
             en: 'Photo AI Mentor - ChatGPT client with photo scanning',
@@ -324,7 +335,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'nft-game',
-          icon: '/images/projects/nft-game.png',
+          icon: nftGameIcon,
           title: {
             ru: 'Samurai Versus - NFT токен игра',
             en: 'Samurai Versus - NFT token game',
@@ -356,7 +367,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'crypto-terminal',
-          icon: '/images/projects/crypto-terminal.png',
+          icon: cryptoTerminalIcon,
           title: {
             ru: 'Web 3 Pay - Терминал для криптоплатежей',
             en: 'Web 3 Pay - Terminal for cryptocurrency payments',
@@ -420,7 +431,7 @@ export const siteData: SiteData = {
         },
         {
           id: 'blablacar-like',
-          icon: '/images/projects/blablacar-like.png',
+          icon: blablacarLikeIcon,
           title: {
             ru: 'Поездки РФ - Приложение для совместных поездок',
             en: 'Poezdki RF - Carpooling application',
@@ -503,7 +514,7 @@ export const siteData: SiteData = {
       projects: [
         {
           id: 'grand-mobile-game',
-          icon: '/images/projects/grand_mobile.png',
+          icon: grandMobileIcon,
           title: {
             ru: 'Grand Mobile - MMORPG с открытым миром',
             en: 'Grand Mobile - Open world MMORPG',

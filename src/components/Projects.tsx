@@ -5,6 +5,9 @@ import { t } from '../utils/i18n';
 import type { Project } from '../types';
 import './Projects.css';
 
+import defaultIcon from '@/assets/projects/default.png';
+
+
 // Утилита для извлечения года из периода
 const getYear = (period?: string): number => {
   if (!period) return 0;
@@ -214,7 +217,7 @@ function ProjectCard({
               />
             ) : !defaultIconError ? (
               <img 
-                src="/images/projects/default.png" 
+                src={defaultIcon} 
                 alt={project.title[language]} 
                 className="project-icon"
                 onError={() => setDefaultIconError(true)}
