@@ -78,7 +78,7 @@
   justify-content: center;
   color: var(--color-text-muted);
   transition: color 0.3s ease, transform 0.3s ease;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
 }
 
 .sidebar-close-btn:hover {
@@ -119,7 +119,7 @@
   align-items: center;
   gap: 14px;
   padding: 14px 20px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-xl);
   text-decoration: none;
   color: var(--color-text);
   transition: var(--transition-base);
@@ -178,8 +178,11 @@
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   padding: 4px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-xl);
   box-shadow: none !important;
+  flex: 1;
+  display: flex;
+  gap: 4px;
 }
 
 .sidebar-section .lang-btn {
@@ -189,6 +192,9 @@
   background: transparent !important;
   border: 1px solid transparent !important;
   text-shadow: none !important;
+  flex: 1;
+  text-align: center;
+  border-radius: var(--radius-sm) !important;
 }
 
 .sidebar-section .lang-btn:hover {
@@ -204,25 +210,48 @@
   font-weight: 700 !important;
 }
 
+.sidebar-switchers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .sidebar-theme-switcher-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 4px;
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-xl);
+  flex-shrink: 0;
+  height: 49px;
+  min-height: 49px;
 }
 
 .sidebar-theme-switcher-wrapper .theme-switcher {
-  width: 48px;
-  height: 48px;
-  padding: 12px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
 }
 
 .sidebar-theme-switcher-wrapper .theme-switcher svg {
   width: 24px;
   height: 24px;
+}
+
+.sidebar-section .language-switcher {
+  flex: 1;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  padding: 4px;
+  border-radius: var(--radius-xl);
+  box-shadow: none !important;
+  display: flex;
+  gap: 4px;
+  height: 49px;
+  min-height: 49px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {

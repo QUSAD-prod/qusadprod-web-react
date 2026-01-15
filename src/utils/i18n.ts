@@ -15,7 +15,7 @@ const translations: Record<string, Translations> = {
   'experience.title': { ru: 'Опыт работы', en: 'Work Experience' },
   'experience.responsibilities': { ru: 'Обязанности:', en: 'Responsibilities:' },
   'experience.tech': { ru: 'Технологии:', en: 'Tech Stack:' },
-  'education.title': { ru: 'Образование', en: 'Education' },
+  'education.title': { ru: 'Образование и достижения', en: 'Education and Achievements' },
   'hero.scroll': { ru: 'Прокрутите', en: 'Scroll' },
 };
 

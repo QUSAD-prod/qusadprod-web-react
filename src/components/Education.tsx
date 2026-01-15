@@ -45,6 +45,7 @@ export function Education() {
 
 function EducationCard({ education }: { education: Education }) {
   const { language } = useLanguage();
+  const isHackathon = education.type === 'hackathon';
 
   const handleClick = () => {
     if (education.url) {
@@ -54,22 +55,48 @@ function EducationCard({ education }: { education: Education }) {
 
   return (
     <div 
-      className={`education-card ${education.url ? 'clickable' : ''}`}
+      className={`education-card ${education.url ? 'clickable' : ''} ${isHackathon ? 'hackathon-card' : ''}`}
       onClick={education.url ? handleClick : undefined}
       style={education.url ? { cursor: 'pointer' } : undefined}
     >
       <div className="education-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-          <path d="M6 12v5c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-5" />
-        </svg>
+        {isHackathon ? (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-5" />
+          </svg>
+        )}
       </div>
       <h3 className="education-institution">{education.institution[language]}</h3>
       <p className="education-specialization">{education.specialization[language]}</p>
+      {education.description && (
+        <p className="education-description">{education.description[language]}</p>
+      )}
       <div className="education-meta">
         <span className="education-period">{education.period}</span>
         <span className="education-location">{education.location[language]}</span>
       </div>
+      {education.award && (
+        <div className="education-award">
+          <span className="education-award-label">
+            {language === 'ru' ? 'Награда:' : 'Award:'}
+          </span>
+          <span className="education-award-text">{education.award[language]}</span>
+        </div>
+      )}
+      {education.certificateNumber && (
+        <div className="education-certificate">
+          <span className="education-certificate-label">
+            {language === 'ru' ? 'Номер сертификата:' : 'Certificate Number:'}
+          </span>
+          <span className="education-certificate-number">{education.certificateNumber}</span>
+        </div>
+      )}
     </div>
   );
 }

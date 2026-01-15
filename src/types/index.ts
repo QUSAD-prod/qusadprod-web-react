@@ -36,6 +36,10 @@ export interface Education {
   period: string;
   location: Record<Language, string>;
   url?: string;
+  certificateNumber?: string;
+  type?: 'education' | 'hackathon';
+  award?: Record<Language, string>;
+  description?: Record<Language, string>;
 }
 
 export interface PersonalInfo {

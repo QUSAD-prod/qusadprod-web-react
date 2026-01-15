@@ -4,6 +4,11 @@
   min-height: 100vh;
 }
 
+.education-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .education-section .section-title {
   font-family: var(--font-accent);
   font-size: clamp(3rem, 7vw, 5.5rem);
@@ -25,17 +30,19 @@
 }
 
 .education-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 60px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
   align-items: stretch;
+  justify-content: center;
 }
 
 .education-card {
+  width: 350px;
+  flex: 1 1 350px;
+  max-width: calc((100% - 80px) / 2);
+  min-width: 350px;
   background: var(--color-bg-card);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -56,6 +63,12 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  align-self: stretch;
+}
+
+/* Когда карточек 2, они растягиваются до ширины как 3 карточки */
+.education-grid:has(.education-card:nth-child(2):last-child) .education-card {
+  max-width: calc((350px * 3 + 40px * 2 - 40px) / 2);
 }
 
 .education-card.visible {
@@ -137,6 +150,14 @@
   color: var(--color-text);
 }
 
+.hackathon-card:hover .education-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7), 0 0 24px rgba(212, 175, 55, 0.5);
+  background: #d4af37;
+  color: #0a0a0f;
+  border-color: #f4d03f;
+}
+
 .education-institution {
   font-family: var(--font-heading);
   font-size: 1.75rem;
@@ -155,6 +176,14 @@
   color: var(--color-text-light);
   margin: 0 0 20px;
   line-height: 1.6;
+}
+
+.education-description {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin: 0 0 20px;
+  line-height: 1.6;
+  font-style: italic;
 }
 
 .education-meta {
@@ -178,10 +207,82 @@
   color: var(--color-text-muted);
 }
 
+.education-certificate {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.education-certificate-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.education-certificate-number {
+  font-size: 0.95rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  font-family: var(--font-primary);
+  letter-spacing: 0.5px;
+}
+
+.education-award {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.education-award-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.education-award-text {
+  font-size: 0.95rem;
+  color: #d4af37;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  letter-spacing: 0.5px;
+}
+
+.hackathon-card .education-icon {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.4);
+  color: #d4af37;
+}
+
+.hackathon-card::before {
+  background: linear-gradient(
+    90deg,
+    #d4af37 0%,
+    #f4d03f 50%,
+    #f7dc6f 100%
+  );
+}
+
+@media (max-width: 1024px) {
+  .education-card {
+    width: calc(50% - 20px);
+    min-width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .education-grid {
-    grid-template-columns: 1fr;
     gap: 30px;
+  }
+  
+  .education-card {
+    width: 100%;
+    max-width: 100%;
   }
   
   .education-section {

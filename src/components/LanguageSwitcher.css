@@ -16,7 +16,7 @@
   border: none;
   color: var(--color-text);
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 0.875rem;
   transition: var(--transition-base);

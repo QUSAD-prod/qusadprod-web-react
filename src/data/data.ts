@@ -704,6 +704,67 @@ export const siteData: SiteData = {
         en: 'Ryazan, Russia',
       },
       url: 'https://www.innovationcampus.ru/itschool/',
+      certificateNumber: '1123582659',
+    },
+    {
+      id: 'geekbrains-python',
+      institution: {
+        ru: 'GeekBrains',
+        en: 'GeekBrains',
+      },
+      specialization: {
+        ru: 'Интенсив «Python для начинающих»',
+        en: 'Intensive «Python for Beginners»',
+      },
+      period: '2020',
+      location: {
+        ru: 'Онлайн',
+        en: 'Online',
+      },
+      url: 'https://gb.ru',
+      certificateNumber: '0851338',
+    },
+    {
+      id: 'html-academy',
+      institution: {
+        ru: 'HTML Academy',
+        en: 'HTML Academy',
+      },
+      specialization: {
+        ru: 'Базовый курс по созданию сайтов с использованием HTML и CSS',
+        en: 'Basic course on website creation using HTML and CSS',
+      },
+      period: '2019',
+      location: {
+        ru: 'Онлайн',
+        en: 'Online',
+      },
+      url: 'https://htmlacademy.ru',
+    },
+    {
+      id: 'cityhack-ryazan',
+      type: 'hackathon',
+      institution: {
+        ru: 'Хакатон CITYHACK РЯЗАНЬ',
+        en: 'CITYHACK RYAZAN Hackathon',
+      },
+      specialization: {
+        ru: 'Приложение для фиксации дорожных нарушений',
+        en: 'Road violation reporting application',
+      },
+      description: {
+        ru: 'Команда «SMEh» (ОГАУ ДО «Центр цифрового образования»). Разработка прототипа телеграмм бота для ГИБДД с отправкой фото нарушений. Цифровой урбанистический хакатон.',
+        en: 'Team «SMEh» (Center for Digital Education). Development of a Telegram bot prototype for traffic police with photo violation reporting. Digital urban hackathon.',
+      },
+      period: '16.11.2020',
+      location: {
+        ru: 'Рязань, Россия',
+        en: 'Ryazan, Russia',
+      },
+      award: {
+        ru: '2 место — команда «SMEh»',
+        en: '2nd Place — Team «SMEh»',
+      },
     },
     {
       id: 'rgrty',

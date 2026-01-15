@@ -124,15 +124,15 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           </div>
           
           <div className="sidebar-section">
-            <h4 className="sidebar-section-title">{sidebarLabels[language].theme}</h4>
-            <div className="sidebar-theme-switcher-wrapper">
-              <ThemeSwitcher />
+            <h4 className="sidebar-section-title">
+              {sidebarLabels[language].theme} / {sidebarLabels[language].language}
+            </h4>
+            <div className="sidebar-switchers">
+              <div className="sidebar-theme-switcher-wrapper">
+                <ThemeSwitcher />
+              </div>
+              <LanguageSwitcher />
             </div>
-          </div>
-          
-          <div className="sidebar-section">
-            <h4 className="sidebar-section-title">{sidebarLabels[language].language}</h4>
-            <LanguageSwitcher />
           </div>
         </div>
       </aside>
