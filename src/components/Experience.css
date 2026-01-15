@@ -267,6 +267,10 @@
 }
 
 @media (max-width: 768px) {
+  .experience-section .section-title {
+    font-size: clamp(1.75rem, 5vw, 3.5rem);
+  }
+  
   .experience-timeline {
     padding: 0;
     max-width: 100%;

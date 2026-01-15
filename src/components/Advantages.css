@@ -1,0 +1,144 @@
+.advantages-section {
+  padding: 100px 20px;
+  background: transparent;
+  min-height: 100vh;
+}
+
+.advantages-title {
+  font-family: var(--font-accent);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 80px;
+  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-text-light) 40%, var(--color-accent) 70%, var(--color-accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.02em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  filter: drop-shadow(0 0 20px var(--color-glow));
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.advantage-card {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  padding: 48px 36px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  transition: var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: advantageFadeIn 0.6s ease forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes advantageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.advantage-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--color-accent) 0%,
+    var(--color-accent-light) 50%,
+    var(--color-accent-secondary) 100%
+  );
+  z-index: 2;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  box-shadow: 0 4px 16px var(--color-glow);
+  transition: height 0.4s ease, opacity 0.4s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-accent-border);
+  background: var(--color-bg-light);
+}
+
+.advantage-card:hover::before {
+  height: 8px;
+  opacity: 1;
+}
+
+.advantage-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: var(--color-accent-bg);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-accent-border);
+  box-shadow: 0 4px 16px var(--color-shadow), 0 0 16px var(--color-glow);
+  transition: var(--transition-base);
+  color: var(--color-accent);
+}
+
+.advantage-card:hover .advantage-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 24px var(--color-shadow-hover), 0 0 24px var(--color-glow);
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.advantage-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.advantage-description {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .advantages-section {
+    padding: 60px 20px;
+  }
+  
+  .advantages-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

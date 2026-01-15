@@ -276,6 +276,10 @@
 }
 
 @media (max-width: 768px) {
+  .education-section .section-title {
+    font-size: clamp(1.75rem, 5vw, 3.5rem);
+  }
+  
   .education-grid {
     gap: 30px;
   }

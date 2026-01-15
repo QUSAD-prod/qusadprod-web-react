@@ -4,6 +4,67 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import { t } from '../utils/i18n';
 import './About.css';
 
+interface Advantage {
+  id: string;
+  icon: React.ReactNode;
+  title: Record<'ru' | 'en', string>;
+  description: Record<'ru' | 'en', string>;
+}
+
+const advantages: Advantage[] = [
+  {
+    id: 'reliability',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="M9 12l2 2 4-4" />
+      </svg>
+    ),
+    title: {
+      ru: 'Надежность',
+      en: 'Reliability',
+    },
+    description: {
+      ru: 'Соблюдаю сроки, ответственно подхожу к каждому проекту. Гарантирую качественный код и стабильную работу приложений.',
+      en: 'I meet deadlines and approach each project responsibly. I guarantee quality code and stable application performance.',
+    },
+  },
+  {
+    id: 'transparency',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="6" />
+        <circle cx="12" cy="12" r="2" />
+      </svg>
+    ),
+    title: {
+      ru: 'Прозрачность',
+      en: 'Transparency',
+    },
+    description: {
+      ru: 'Все этапы разработки видны от идеи до релиза. Чистый код, понятная архитектура и полная отчетность по проекту.',
+      en: 'All development stages are visible from idea to release. Clean code, clear architecture, and full project reporting.',
+    },
+  },
+  {
+    id: 'product-focus',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+      </svg>
+    ),
+    title: {
+      ru: 'Фокус на продукт',
+      en: 'Product Focus',
+    },
+    description: {
+      ru: 'Приоритет на UX, производительность и масштабируемость. Создаю решения, которые приносят реальную пользу пользователям.',
+      en: 'Priority on UX, performance, and scalability. I create solutions that bring real value to users.',
+    },
+  },
+];
+
 // Функция для вычисления возраста от даты рождения
 function calculateAge(birthDate: string): number {
   const birth = new Date(birthDate);
@@ -94,12 +155,12 @@ export function About() {
 
   useEffect(() => {
     if (sectionRef.current) {
-      const cards = sectionRef.current.querySelectorAll('.about-personal-card, .about-summary-card');
-      cards.forEach((card) => {
+      const cards = sectionRef.current.querySelectorAll('.about-personal-card, .about-summary-card, .advantage-card');
+      cards.forEach((card, index) => {
         requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
+          setTimeout(() => {
             card.classList.add('visible');
-          });
+          }, index * 100);
         });
       });
     }
@@ -146,6 +207,23 @@ export function About() {
                 <p className="about-summary-text">{data.personalInfo.summary[language]}</p>
               </div>
             )}
+          </div>
+        </div>
+        
+        <div className="about-advantages">
+          <div className="advantages-grid">
+            {advantages.map((advantage) => (
+              <div
+                key={advantage.id}
+                className="advantage-card"
+              >
+                <div className="advantage-icon">
+                  {advantage.icon}
+                </div>
+                <h3 className="advantage-title">{advantage.title[language]}</h3>
+                <p className="advantage-description">{advantage.description[language]}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
