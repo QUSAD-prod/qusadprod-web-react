@@ -248,6 +248,8 @@
   background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light), var(--color-accent-secondary));
   opacity: 0.6;
   transition: opacity 0.4s ease, height 0.4s ease;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  z-index: 1;
 }
 
 .project-card.visible {
@@ -266,12 +268,13 @@
 .project-card:not(.expanded):hover::before {
   opacity: 1;
   height: 5px;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
 .project-card.expanded {
   box-shadow: var(--shadow-hover);
   transform: translateY(0) translateZ(0) !important;
-  overflow: visible;
+  overflow: hidden;
   z-index: 2;
   opacity: 1 !important;
   width: 100%;
@@ -285,7 +288,8 @@
 
 .project-card.expanded::before {
   opacity: 1;
-  height: 6px;
+  height: 4px;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
 @keyframes expandCardAnimation {
@@ -322,7 +326,7 @@
 .project-icon {
   width: 64px;
   height: 64px;
-  border-radius: var(--radius-md);
+  border-radius: 18px;
   object-fit: cover;
   background: var(--color-bg-card);
   border: 2px solid var(--color-accent-border);
@@ -339,7 +343,7 @@
 .project-icon-placeholder {
   width: 56px;
   height: 56px;
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   display: flex;
@@ -454,6 +458,24 @@
   font-size: 0.875rem;
   font-weight: 600;
   color: #10b981;
+  font-family: var(--font-mono);
+}
+
+.project-tag-freelance {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #06b6d4;
+  background: rgba(6, 182, 212, 0.15);
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  box-shadow: 0 2px 4px rgba(6, 182, 212, 0.2);
+  font-weight: 600;
+}
+
+.project-tag-freelance .hash-icon {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #06b6d4;
   font-family: var(--font-mono);
 }
 

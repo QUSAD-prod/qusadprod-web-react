@@ -10,6 +10,8 @@ import quizGamesIcon from '@/assets/images/projects/quiz-games.png';
 import referenceBooksIcon from '@/assets/images/projects/reference-books.png';
 import sleepyAlarmIcon from '@/assets/images/projects/sleepy-alarm.png';
 import weatherAppIcon from '@/assets/images/projects/weather-app.png';
+import monetrixIcon from '@/assets/images/projects/monetrix.png';
+import reserveIcon from '@/assets/images/projects/reserve.png';
 
 export const siteData: SiteData = {
   personalInfo: {
@@ -34,8 +36,8 @@ export const siteData: SiteData = {
       en: 'Ryazan',
     },
     summary: {
-      ru: 'Ориентированный на результат разработчик программного обеспечения с более чем тремя годами опыта в разработке и исследованиях. Стремлюсь создавать интуитивно понятные и удобные интерфейсы, при этом пишу чистый, читаемый и поддерживаемый код. Делаю сильный акцент на качестве решений, которые я создаю, и их реальной ценности для конечных пользователей. Постоянно расширяю свои технические знания и навыки, слежу за современными технологиями и практиками разработки, чтобы оставаться эффективным в быстро развивающейся IT-индустрии.',
-      en: 'Results-driven software developer with over three years of experience in software engineering and research. I strive to create intuitive and user-friendly interfaces while writing clean, readable, and maintainable code. I place a strong emphasis on the quality of the solutions I build and their real-world value to end users. Continuously expanding my technical knowledge and skills, I stay up to date with modern technologies and development practices to remain effective in the fast-paced IT industry.',
+      ru: 'Flutter разработчик, специализируюсь на создании кроссплатформенных мобильных приложений для Android и iOS. Разрабатываю приложения с нуля: от проектирования архитектуры до публикации в магазинах. Имею опыт работы над fintech приложениями, VPN сервисами, игровыми проектами и различными мобильными решениями. Работаю с нативными API платформ, интегрирую сторонние сервисы, проектирую пользовательские интерфейсы и управляю разработкой.',
+      en: 'Flutter developer specializing in cross-platform mobile application development for Android and iOS. Develop applications from scratch: from architecture design to app store publication. Have experience working on fintech applications, VPN services, game projects, and various mobile solutions. Work with native platform APIs, integrate third-party services, design user interfaces, and manage development.',
     },
   },
   workExperience: [
@@ -56,31 +58,19 @@ export const siteData: SiteData = {
       },
       responsibilities: {
         ru: [
-          'Проектирование архитектуры приложений',
-          'Адаптивная верстка экранов и разработка UI/UX',
+          'Проектирование архитектуры приложений с нуля',
           'Разработка сложных анимаций и кастомных элементов интерфейса',
-          'Интеграция REST API и GraphQL',
-          'Работа с Firebase (аутентификация, база данных, push-уведомления)',
           'Интеграция платежных систем и блокчейн-технологий',
           'Работа с аппаратными компонентами (принтеры, терминалы)',
-          'Локализация приложений',
-          'Тестирование и отладка',
-          'Публикация приложений в Google Play и AppStore',
         ],
         en: [
-          'Application architecture design',
-          'Adaptive screen layout and UI/UX development',
+          'Application architecture design from scratch',
           'Development of complex animations and custom UI elements',
-          'REST API and GraphQL integration',
-          'Working with Firebase (authentication, database, push notifications)',
           'Payment systems and blockchain technologies integration',
           'Working with hardware components (printers, terminals)',
-          'Application localization',
-          'Testing and debugging',
-          'Publishing applications to Google Play and AppStore',
         ],
       },
-      techStack: ['Flutter', 'Dart', 'Provider', 'Firebase', 'Hive', 'REST API', 'GraphQL', 'dio', 'http', 'intl', 'camera', 'flutter_local_notifications', 'google_sign_in', 'google_mobile_ads', 'trust_wallet_core_lib', 'qr_flutter', 'sunmi_printer_plus', 'openvpn_flutter'],
+      techStack: ['Flutter', 'Dart', 'Provider', 'Firebase', 'Hive', 'REST API', 'GraphQL', 'Dio', 'Http', 'Intl', 'Camera', 'FlutterLocalNotifications', 'GoogleSignIn', 'GoogleMobileAds', 'TrustWalletCoreLib', 'QrFlutter', 'SunmiPrinterPlus', 'OpenVpnFlutter'],
       projects: [
         {
           id: 'airport-board',
@@ -105,7 +95,7 @@ export const siteData: SiteData = {
             ru: 'Проект потребовал реализации сложной системы фильтрации и поиска рейсов с поддержкой множественных параметров, интеграции с Firebase для синхронизации расписания в реальном времени, разработки административной панели для управления данными, а также реализации push-уведомлений с учетом различных статусов рейсов. Особую сложность представляла адаптация интерфейса под стиль VKUI для обеспечения единообразия с экосистемой VK.',
             en: 'The project required implementing a complex flight filtering and search system with support for multiple parameters, Firebase integration for real-time schedule synchronization, developing an administrative panel for data management, and implementing push notifications considering various flight statuses. Particular complexity was presented by adapting the interface to VKUI style to ensure consistency with the VK ecosystem.',
           },
-          technologies: ['Flutter', 'Dart', 'Provider', 'Firebase', 'Hive', 'http', 'REST API'],
+          technologies: ['Flutter', 'Dart', 'Provider', 'Firebase', 'Hive', 'Http', 'REST API'],
           links: [
             {
               label: 'GitHub',
@@ -133,7 +123,7 @@ export const siteData: SiteData = {
             ru: 'Мобильное приложение для отслеживания погодных условий с расширенным функционалом. Реализованы функции просмотра текущей погоды и прогноза на несколько дней вперед, выбор конкретной даты для просмотра прогноза, система отправки предупреждений пользователям через push-уведомления о неблагоприятных погодных условиях. Включает административную панель для управления настройками уведомлений и конфигурации приложения. Для монетизации приложения был внедрен рекламный баннер.',
             en: 'Mobile application for tracking weather conditions with advanced features. Includes viewing current weather and multi-day forecasts, selecting specific dates to view forecasts, and a system for sending warnings to users via push notifications about adverse weather conditions. Features an administrative panel for managing notification settings and application configuration. An advertising banner was integrated for application monetization.',
           },
-          technologies: ['Flutter', 'Dart', 'Provider', 'intl', 'http', 'REST API', 'Firebase', 'google_mobile_ads'],
+          technologies: ['Flutter', 'Dart', 'Provider', 'Intl', 'Http', 'REST API', 'Firebase', 'GoogleMobileAds'],
           links: [
             {
               label: 'GitHub',
@@ -241,7 +231,7 @@ export const siteData: SiteData = {
             ru: 'Мобильное приложение-оболочка для доступа к школьным электронным дневникам Рязани и Москвы. Приложение решает проблему неудобных стандартных веб-оболочек электронных дневников, предоставляя современный и интуитивно понятный мобильный интерфейс. Интерфейс разработан на основе VKUI дизайн-системы, переписанной с React на Flutter для обеспечения единообразия и знакомого пользовательского опыта. Реализована упрощенная система входа через VK ID с возможностью привязки аккаунтов, что избавляет пользователей от необходимости запоминать сложные логины и пароли. Приложение предоставляет удобный доступ к расписанию уроков, оценкам и домашним заданиям. Дополнительно реализована функциональность, позволяющая учащимся самостоятельно вносить домашние задания и заметки в дневник, если учитель не успел или не смог это сделать своевременно, обеспечивая непрерывность ведения учебной документации.',
             en: 'Mobile application wrapper for accessing school electronic diaries of Ryazan and Moscow. The application solves the problem of inconvenient standard web wrappers of electronic diaries by providing a modern and intuitive mobile interface. The interface is designed based on VKUI design system, rewritten from React to Flutter to ensure consistency and familiar user experience. Implemented simplified login system through VK ID with account linking capability, eliminating the need for users to remember complex usernames and passwords. The application provides convenient access to class schedules, grades, and homework. Additionally, functionality has been implemented that allows students to independently enter homework and notes into the diary if the teacher did not have time or was unable to do so in a timely manner, ensuring continuity of educational documentation.',
           },
-          technologies: ['Flutter', 'Dart', 'MobX', 'dio', 'REST API', 'webview_cookie_manager', 'Provider', 'webview', 'Hive', 'intl'],
+          technologies: ['Flutter', 'Dart', 'MobX', 'Dio', 'REST API', 'WebViewCookieManager', 'Provider', 'WebView', 'Hive', 'Intl'],
           tags: [{ ru: '# Первый Flutter проект', en: '# First Flutter Project' }],
           links: [
             {
@@ -286,8 +276,8 @@ export const siteData: SiteData = {
             ru: 'Проект решил проблему пробуждения в неправильной фазе сна, которая приводит к чувству разбитости и усталости. Приложение помогает пользователям просыпаться в легкой фазе сна, обеспечивая более бодрое и комфортное пробуждение. Благодаря научно обоснованному алгоритму расчета времени пробуждения и отслеживанию статистики сна, пользователи могут улучшить качество своего отдыха и общее самочувствие.',
             en: 'The project solved the problem of waking up in the wrong sleep phase, which leads to feelings of fatigue and exhaustion. The application helps users wake up in the light sleep phase, ensuring a more alert and comfortable awakening. Thanks to the scientifically-based algorithm for calculating wake-up time and sleep statistics tracking, users can improve their rest quality and overall well-being.',
           },
-          technologies: ['Flutter', 'Dart', 'Provider', 'Hive', 'flutter_local_notifications'],
-          tags: [{ ru: '# Первый фриланс-проект', en: '# First Freelance Project' }],
+          technologies: ['Flutter', 'Dart', 'Provider', 'Hive', 'FlutterLocalNotifications'],
+          tags: [{ ru: '# Первый фриланс проект', en: '# First Freelance Project' }],
           links: [
             {
               label: 'GitHub',
@@ -315,7 +305,7 @@ export const siteData: SiteData = {
             ru: 'Инновационное для 2023 года мобильное приложение, объединяющее возможности ChatGPT с компьютерным зрением. Приложение позволяло решать не только математические уравнения, но и любые текстовые задачи - как по фотографии, так и при ручном вводе текста. Пользователи могли фотографировать учебные задачи, документы, тексты или любые вопросы, после чего приложение автоматически распознавало содержимое изображения и отправляло его в нейросеть для получения подробных ответов и решений. Приложение представляло собой инновационное решение даже для 2023 года, аналог Photomath, но с использованием возможностей нейросети для более широкого спектра задач.',
             en: 'Innovative for 2023 mobile application combining ChatGPT capabilities with computer vision. The application allowed solving not only mathematical equations, but also any text tasks - both from photos and through manual text input. Users could photograph educational tasks, documents, texts, or any questions, after which the application automatically recognized the image content and sent it to the neural network to receive detailed answers and solutions. The application was an innovative solution even for 2023, an analog to Photomath, but using neural network capabilities for a wider range of tasks.',
           },
-          technologies: ['Flutter', 'Dart', 'Provider', 'Firebase', 'camera', 'dio', 'REST API', 'intl', 'Hive', 'graphql_flutter', 'google_sign_in'],
+          technologies: ['Flutter', 'Dart', 'Provider', 'Firebase', 'Camera', 'Dio', 'REST API', 'Intl', 'Hive', 'GraphQlFlutter', 'GoogleSignIn'],
           tags: [{ ru: 'Любимый проект', en: 'Favorite Project' }],
           links: [
             {
@@ -348,7 +338,7 @@ export const siteData: SiteData = {
             ru: 'Игровое мобильное приложение с интеграцией NFT токенов в тематике самураев. Приложение позволяет игрокам собирать, владеть и использовать уникальные NFT токены, связанные с игровыми персонажами, оружием и предметами. Реализована игровая механика с использованием блокчейн-технологий для обеспечения уникальности и владения цифровыми активами. Игроки могут взаимодействовать с NFT коллекциями, участвовать в игровых событиях и развивать своих персонажей-самураев.',
             en: 'Mobile game application with NFT token integration in a samurai theme. The application allows players to collect, own, and use unique NFT tokens associated with game characters, weapons, and items. Game mechanics are implemented using blockchain technologies to ensure uniqueness and ownership of digital assets. Players can interact with NFT collections, participate in game events, and develop their samurai characters.',
           },
-          technologies: ['Flutter', 'Dart', 'Hive', 'Provider', 'dio', 'REST API', 'trust_wallet_core_lib', 'qr_flutter'],
+          technologies: ['Flutter', 'Dart', 'Hive', 'Provider', 'Dio', 'REST API', 'TrustWalletCoreLib', 'QrFlutter'],
           links: [
             {
               label: 'GitHub',
@@ -380,7 +370,7 @@ export const siteData: SiteData = {
             ru: 'Терминальное приложение для приема криптовалютных платежей с полным циклом обработки транзакций. Реализованы функции генерации QR-кодов для отображения на терминале, которые клиенты сканируют для осуществления платежа, отслеживание статуса платежа в реальном времени, автоматическая печать чеков после успешного завершения транзакции. Приложение обеспечивает безопасную обработку криптовалютных платежей и ведение истории транзакций.',
             en: 'Terminal application for accepting cryptocurrency payments with a full transaction processing cycle. Features include generating QR codes for display on the terminal, which customers scan to make payments, real-time payment status tracking, and automatic check printing after successful transaction completion. The application provides secure cryptocurrency payment processing and transaction history management.',
           },
-          technologies: ['Flutter', 'Dart', 'Provider', 'dio', 'REST API', 'Firebase', 'intl', 'sunmi_printer_plus'],
+          technologies: ['Flutter', 'Dart', 'Provider', 'Dio', 'REST API', 'Firebase', 'Intl', 'SunmiPrinterPlus'],
           tags: [{ ru: 'Любимый проект', en: 'Favorite Project' }],
           links: [
             {
@@ -412,7 +402,7 @@ export const siteData: SiteData = {
             ru: 'Мобильное приложение Cool VPN для безопасного VPN подключения по протоколу OpenVPN. Приложение позволяет пользователям подключаться к предустановленным VPN серверам, обеспечивая защищенное и анонимное интернет-соединение. Реализованы функции быстрого подключения/отключения, выбор сервера из списка доступных, отображение статуса подключения и статистики использования трафика. Приложение обеспечивает шифрование трафика и защиту данных пользователей при работе в интернете.',
             en: 'Mobile application Cool VPN for secure VPN connection using OpenVPN protocol. The application allows users to connect to pre-configured VPN servers, providing secure and anonymous internet connection. Features include quick connect/disconnect, server selection from available list, connection status display, and traffic usage statistics. The application provides traffic encryption and user data protection when working on the internet.',
           },
-          technologies: ['Flutter', 'Dart', 'Provider', 'Firebase', 'google_sign_in', 'Hive', 'openvpn_flutter'],
+          technologies: ['Flutter', 'Dart', 'Provider', 'Firebase', 'GoogleSignIn', 'Hive', 'OpenVpnFlutter'],
           links: [
             {
               label: 'GitHub',
@@ -482,35 +472,19 @@ export const siteData: SiteData = {
         ru: [
           'Миграция игрового движка с нативных платформ (Swift, Java/Kotlin) на Flutter',
           'Проектирование единой архитектуры для кроссплатформенной реализации',
-          'Создание системы управления игровым состоянием с использованием Bloc',
           'Интеграция игрового движка через platform channels',
           'Реализация сложных игровых механик (мультиплеер, синхронизация состояния, экономика, бизнес-системы)',
-          'Разработка системы работы и карьеры, бизнес-механик, криминальных миссий, гонок на автомобилях',
-          'Реализация кастомизации персонажей с более чем 300 нарядами',
           'Работа с большими объемами данных и оптимизация производительности для MMORPG',
-          'Реализация системы загрузки и обновления контента',
-          'Адаптивная верстка экранов и разработка UI/UX',
-          'Разработка сложных анимаций с нуля',
-          'Локализация интерфейсов для русской и английской аудитории',
-          'Тестирование и отладка сложной игровой системы',
         ],
         en: [
           'Migration of game engine from native platforms (Swift, Java/Kotlin) to Flutter',
           'Designing unified architecture for cross-platform implementation',
-          'Creating game state management system using Bloc',
           'Integrating game engine through platform channels',
           'Implementing complex game mechanics (multiplayer, state synchronization, economy, business systems)',
-          'Developing work and career system, business mechanics, criminal missions, car racing',
-          'Implementing character customization with over 300 outfits',
           'Working with large data volumes and performance optimization for MMORPG',
-          'Implementing content download and update system',
-          'Adaptive screen layout and UI/UX development',
-          'Developing complex animations from scratch',
-          'Localizing interfaces for Russian and English audiences',
-          'Testing and debugging complex game system',
         ],
       },
-      techStack: ['Flutter', 'Dart', 'Bloc', 'dio', 'REST API', 'GetIt', 'Hive', 'GoRouter', 'SharedPreferences', 'retrofit', 'flutter_file_downloader', 'crypto', 'logger', 'equatable', 'intl'],
+      techStack: ['Flutter', 'Dart', 'Bloc', 'Dio', 'REST API', 'GetIt', 'Hive', 'GoRouter', 'SharedPreferences', 'Retrofit', 'FlutterFileDownloader', 'Crypto', 'Logger', 'Equatable', 'Intl'],
       projects: [
         {
           id: 'grand-mobile-game',
@@ -527,7 +501,7 @@ export const siteData: SiteData = {
             ru: 'Разработка кроссплатформенной игровой версии крупномасштабной MMORPG с открытым миром на Flutter на основе существующего нативного кода. Grand Mobile - это онлайн игра с RP (role play) механиками, разработанная для компании Dynamic Technologies TOO, где игроки взаимодействуют в мультиплеере, создавая свои истории в живом виртуальном мире. Проект включал миграцию функциональности с нативных платформ на единую кроссплатформенную кодовую базу, реализацию новых игровых функций, включая систему работы и карьеры, бизнес-механики, криминальные миссии, гонки на автомобилях, кастомизацию персонажей с более чем 300 нарядами, выбор из сотен транспортных средств от классических советских машин до современных суперкаров. Приложение доступно в Google Play, App Store и RuStore с более чем 10 миллионами загрузок.',
             en: 'Development of a cross-platform game version of a large-scale MMORPG with open world on Flutter based on existing native code. Grand Mobile is an online game with RP (role play) mechanics, developed for Dynamic Technologies TOO company, where players interact in multiplayer, creating their stories in a living virtual world. The project included migrating functionality from native platforms to a unified cross-platform codebase, implementing new game features, including work and career system, business mechanics, criminal missions, car racing, character customization with over 300 outfits, selection from hundreds of vehicles from classic Soviet cars to modern supercars. The application is available on Google Play, App Store, and RuStore with over 10 million downloads.',
           },
-          technologies: ['Flutter', 'Dart', 'Bloc', 'dio', 'REST API', 'GetIt', 'Hive', 'GoRouter', 'SharedPreferences', 'retrofit', 'flutter_file_downloader', 'crypto', 'logger', 'equatable', 'intl'],
+          technologies: ['Flutter', 'Dart', 'Bloc', 'Dio', 'REST API', 'GetIt', 'Hive', 'GoRouter', 'SharedPreferences', 'Retrofit', 'FlutterFileDownloader', 'Crypto', 'Logger', 'Equatable', 'Intl'],
           tags: [{ ru: '# Самый сложный проект', en: '# Most Complex Project' }],
           links: [
             {
@@ -589,36 +563,128 @@ export const siteData: SiteData = {
       responsibilities: {
         ru: [
           'Проектирование и разработка архитектуры fintech приложения с нуля',
-          'Создание системы управления состоянием с использованием Bloc',
           'Разработка безопасных механизмов аутентификации и авторизации',
           'Интеграция с финансовыми API и платежными системами',
           'Реализация работы с криптографией для обеспечения безопасности данных',
-          'Разработка адаптивного интерфейса с учетом требований fintech',
           'Составление технических заданий для backend разработчиков',
-          'Интеграция push-уведомлений через OneSignal',
-          'Настройка логирования и мониторинга через Talker',
-          'Работа с локальным хранилищем Hive для кэширования данных',
-          'Реализация навигации через AutoRoute',
-          'Тестирование и отладка',
-          'Подготовка к публикации в магазинах приложений',
         ],
         en: [
           'Designing and developing fintech application architecture from scratch',
-          'Creating state management system using Bloc',
           'Developing secure authentication and authorization mechanisms',
           'Integrating with financial APIs and payment systems',
           'Implementing cryptography for data security',
-          'Developing adaptive interface considering fintech requirements',
           'Setting technical specifications for backend developers',
-          'Integrating push notifications through OneSignal',
-          'Setting up logging and monitoring through Talker',
-          'Working with local Hive storage for data caching',
-          'Implementing navigation through AutoRoute',
-          'Testing and debugging',
-          'Preparing app stores for release',
         ],
       },
-      techStack: ['bloc', 'dio', 'getIt', 'hive', 'autoRoute', 'talker', 'firebase', 'oneSignal'],
+      techStack: ['Flutter', 'Dart', 'Bloc', 'Intl', 'AutoRoute', 'GetIt', 'Hive', 'Talker', 'Dio', 'Crypto', 'WebView', 'WebSocket', 'REST API'],
+      projects: [
+        {
+          id: 'monetrix',
+          icon: monetrixIcon,
+          title: {
+            ru: 'Monetrix',
+            en: 'Monetrix',
+          },
+          description: {
+            ru: 'Универсальный дашборд с автообновлением и подключением всех финансовых продуктов',
+            en: 'Universal dashboard with automatic update and connection of all financial products',
+          },
+          detailedDescription: {
+            ru: 'Кроссплатформенное fintech приложение для комплексного управления личными финансами. Monetrix предоставляет универсальный дашборд с автоматическим обновлением данных и возможностью подключения всех финансовых продуктов в одном месте. Приложение позволяет пользователям подключать банковские счета, брокерские счета, данные по кредитам и интегрироваться с Госуслугами для получения полной картины финансового состояния. Реализован персональный финансовый помощник "Кэшик" с чат-интерфейсом на основе 3D-аватара, который предоставляет индивидуальный анализ с рекомендациями для эффективного управления финансами. Приложение включает систему определения уровня риска пользователя, отслеживание финансового состояния в различных временных периодах (день, неделя, месяц, год), а также предоставляет персональные решения для улучшения финансовой жизни.',
+            en: 'Cross-platform fintech application for comprehensive personal finance management. Monetrix provides a universal dashboard with automatic data updates and the ability to connect all financial products in one place. The application allows users to connect bank accounts, brokerage accounts, loan data, and integrate with government services to get a complete picture of their financial status. A personal financial assistant "Keshik" with a chat interface based on a 3D avatar has been implemented, which provides individual analysis with recommendations for effective financial management. The application includes a user risk level determination system, financial status tracking in various time periods (day, week, month, year), and provides personalized solutions to improve financial life.',
+          },
+          problemSolved: {
+            ru: 'Проект решает проблему фрагментации финансовой информации пользователей, которая обычно разбросана по множеству различных сервисов и приложений. Monetrix объединяет все финансовые продукты в едином дашборде с автоматическим обновлением данных, избавляя пользователей от необходимости вручную отслеживать состояние счетов в разных банках, брокерских компаниях и других финансовых сервисах. Персональный финансовый помощник с индивидуальным анализом помогает пользователям принимать обоснованные финансовые решения, получать рекомендации по управлению финансами и улучшать свое финансовое состояние шаг за шагом.',
+            en: 'The project solves the problem of fragmentation of users\' financial information, which is usually scattered across many different services and applications. Monetrix combines all financial products in a single dashboard with automatic data updates, freeing users from the need to manually track account statuses in different banks, brokerage companies, and other financial services. The personal financial assistant with individual analysis helps users make informed financial decisions, receive recommendations for financial management, and improve their financial condition step by step.',
+          },
+          technicalChallenges: {
+            ru: 'Проект потребовал решения сложных технических задач по интеграции с множественными финансовыми API различных банков и брокерских компаний. Основные вызовы включали проектирование и разработку архитектуры fintech приложения с нуля с использованием Bloc для управления состоянием, создание унифицированного интерфейса для подключения различных финансовых сервисов (банки, брокеры, кредитные организации, Госуслуги), реализацию системы автоматического обновления финансовых данных с учетом различных форматов API и протоколов, разработку персонального финансового помощника с чат-интерфейсом и 3D-аватаром, создание системы индивидуального анализа и генерации рекомендаций на основе финансовых данных пользователя, реализацию системы определения уровня риска, интеграцию с Firebase для синхронизации данных, настройку push-уведомлений через OneSignal для информирования пользователей о важных событиях, работу с локальным хранилищем Hive для кэширования данных, реализацию навигации через AutoRoute, настройку логирования и мониторинга через Talker, а также обеспечение безопасности финансовых данных с использованием криптографии.',
+            en: 'The project required solving complex technical challenges in integrating with multiple financial APIs from various banks and brokerage companies. Main challenges included designing and developing fintech application architecture from scratch using Bloc for state management, creating a unified interface for connecting various financial services (banks, brokers, credit organizations, government services), implementing an automatic financial data update system considering various API formats and protocols, developing a personal financial assistant with chat interface and 3D avatar, creating an individual analysis system and generating recommendations based on user financial data, implementing a risk level determination system, integrating with Firebase for data synchronization, setting up push notifications through OneSignal to inform users about important events, working with local Hive storage for data caching, implementing navigation through AutoRoute, setting up logging and monitoring through Talker, as well as ensuring security of financial data using cryptography.',
+          },
+          technologies: ['Flutter', 'Dart', 'Bloc', 'Intl', 'AutoRoute', 'GetIt', 'Hive', 'Talker', 'Dio', 'Crypto', 'WebView', 'WebSocket', 'REST API'],
+          links: [
+            {
+              label: 'Google Play',
+              url: 'https://play.google.com/store/apps/details?id=com.finconect.monetrix',
+            },
+          ],
+          period: '2025',
+        },
+      ],
+    },
+    {
+      id: 'intellera',
+      position: {
+        ru: 'Lead Flutter Developer',
+        en: 'Lead Flutter Developer',
+      },
+      company: {
+        ru: 'Intellera LLC',
+        en: 'Intellera LLC',
+      },
+      period: '11.2025 - настоящее время',
+      description: {
+        ru: 'Полная разработка мультиплатформенного VPN приложения Reserve VPN для Android и iOS с нуля. Самостоятельное проектирование архитектуры, выбор протокола XRAY core, продумывание пользовательских взаимодействий и минималистичного интерфейса. Управление разработкой, выбор стратегических локаций для VPN серверов, интеграция с нативными системными API, разработка системы подписок и обеспечение безопасности данных. Приложение получило более 1300 пользователей за первый день релиза в App Store без вложений в рекламу.',
+        en: 'Full development of cross-platform VPN application Reserve VPN for Android and iOS from scratch. Independent architecture design, XRAY core protocol selection, user interaction design and minimalist interface development. Development management, strategic VPN server location selection, native system API integration, subscription system development and data security. The application received over 1300 users on the first day of App Store release without advertising investments.',
+      },
+      responsibilities: {
+        ru: [
+          'Полная разработка мобильного приложения для Android и iOS с нуля',
+          'Самостоятельное проектирование архитектуры приложения и выбор технологического стека',
+          'Выбор и интеграция протокола XRAY core для VPN подключений',
+          'Продумывание пользовательских взаимодействий и минималистичного UI/UX дизайна',
+          'Управление разработкой и принятие технических решений',
+          'Реализация интеграции с нативными VPN API iOS и Android для системного уровня подключения',
+          'Разработка системы подписок с интеграцией платежных систем',
+          'Оптимизация производительности для обеспечения стабильного VPN соединения',
+        ],
+        en: [
+          'Full mobile application development for Android and iOS from scratch',
+          'Independent application architecture design and technology stack selection',
+          'XRAY core protocol selection and integration for VPN connections',
+          'User interaction design and minimalist UI/UX development',
+          'Development management and technical decision making',
+          'Implementing integration with native iOS and Android VPN APIs for system-level connection',
+          'Developing subscription system with payment system integration',
+          'Performance optimization to ensure stable VPN connection',
+        ],
+      },
+      techStack: ['Flutter', 'Dart', 'GoRouter', 'Firebase', 'GetIt', 'Bloc', 'GoogleSignIn', 'Slang', 'Talker', 'Hive', 'Dio', 'FlutterVless', 'UrlLauncher', 'SignInWithApple', 'VpnConnectionDetector', 'REST API'],
+      projects: [
+        {
+          id: 'reserve-vpn',
+          icon: reserveIcon,
+          title: {
+            ru: 'Reserve VPN',
+            en: 'Reserve VPN',
+          },
+          description: {
+            ru: 'Мультиплатформенное VPN приложение на XRAY core для обеспечения приватности и безопасности',
+            en: 'Cross-platform VPN application on XRAY core for privacy and security',
+          },
+          detailedDescription: {
+            ru: 'Мультиплатформенное VPN приложение Reserve VPN, разработанное на базе XRAY core для обеспечения максимальной приватности и безопасности пользователей. Приложение предоставляет простой и интуитивный интерфейс с минималистичным подходом: There are no randoms in Reserve. You\'re here to disappear. We just gave you a button, press it. Реализована система аутентификации через Email/Password, Google Sign-In и Apple Sign-In. Приложение включает 8 тщательно отобранных VPN серверов в стратегически важных локациях: Россия (Москва), Нидерланды (Амстердам), Германия (Франкфурт), Финляндия (Хельсинки), Великобритания (Лондон), Франция (Париж), Швеция (Стокгольм) и Австрия (Вена). Каждый сервер выбран с учетом скорости, стабильности и смысла, а не просто для количества. Реализована система подписок, защищенное хранение и выдача VPN конфигураций, интеграция с системными VPN API iOS и Android для нативного подключения. Приложение поддерживает локализацию на русском и английском языках. За первый день релиза в App Store приложение получило более 1300 довольных пользователей без вложений в рекламу.',
+            en: 'Cross-platform VPN application Reserve VPN, developed on XRAY core base for maximum user privacy and security. The application provides a simple and intuitive interface with a minimalist approach: There are no randoms in Reserve. You\'re here to disappear. We just gave you a button, press it. Implemented authentication system through Email/Password, Google Sign-In, and Apple Sign-In. The application includes 8 carefully selected VPN servers in strategically important locations: Russia (Moscow), Netherlands (Amsterdam), Germany (Frankfurt), Finland (Helsinki), United Kingdom (London), France (Paris), Sweden (Stockholm), and Austria (Vienna). Each server is selected considering speed, stability, and purpose, not just for quantity. Implemented subscription system, secure storage and distribution of VPN configurations, integration with native iOS and Android VPN APIs for native connection. The application supports localization in Russian and English. On the first day of release in App Store, the application received over 1300 satisfied users without advertising investments.',
+          },
+          problemSolved: {
+            ru: 'Проект решает проблему избыточности и сложности большинства VPN приложений на рынке, которые предлагают сотни серверов без гарантии качества. Reserve VPN фокусируется на качестве, а не количестве, предоставляя тщательно отобранные серверы с гарантией скорости и стабильности. Приложение решает проблему приватности и безопасности пользователей в интернете, предоставляя простой инструмент для "исчезновения" в сети без лишней возни. Минималистичный подход и автоматическая защита избавляют пользователей от необходимости разбираться в сложных настройках VPN, делая приватность доступной одним нажатием кнопки.',
+            en: 'The project solves the problem of redundancy and complexity of most VPN applications on the market, which offer hundreds of servers without quality guarantees. Reserve VPN focuses on quality, not quantity, providing carefully selected servers with guaranteed speed and stability. The application solves the problem of user privacy and security on the internet, providing a simple tool for "disappearing" online without unnecessary hassle. The minimalist approach and automatic protection free users from the need to understand complex VPN settings, making privacy accessible with one button press.',
+          },
+          technicalChallenges: {
+            ru: 'Проект потребовал решения сложных технических задач по интеграции XRAY core в мультиплатформенное приложение. Основные вызовы включали интеграцию с нативными VPN API iOS и Android для обеспечения системного уровня подключения, реализацию системы аутентификации с поддержкой Email/Password, Google Sign-In и Apple Sign-In, создание защищенной системы хранения и выдачи VPN конфигураций с шифрованием, разработку системы подписок с интеграцией платежных систем, реализацию автоматического подключения к VPN с обработкой различных сетевых сценариев (Wi-Fi, мобильные данные, переключение сетей), работу с ограничениями мобильных операторов в некоторых регионах, которые могут блокировать VPN подключения через мобильный интернет, оптимизацию производительности для обеспечения стабильного соединения, реализацию локализации на русском и английском языках, а также обеспечение безопасности данных пользователей и VPN конфигураций.',
+            en: 'The project required solving complex technical challenges in integrating XRAY core into a cross-platform application. Main challenges included integration with native iOS and Android VPN APIs to ensure system-level connection, implementing authentication system with support for Email/Password, Google Sign-In, and Apple Sign-In, creating a secure system for storing and distributing VPN configurations with encryption, developing a subscription system with payment system integration, implementing automatic VPN connection with handling of various network scenarios (Wi-Fi, mobile data, network switching), working with mobile operator restrictions in some regions that may block VPN connections through mobile internet, performance optimization to ensure stable connection, implementing localization in Russian and English, as well as ensuring security of user data and VPN configurations.',
+          },
+          technologies: ['Flutter', 'Dart', 'GoRouter', 'Firebase', 'GetIt', 'Bloc', 'GoogleSignIn', 'Slang', 'Talker', 'Hive', 'Dio', 'FlutterVless', 'UrlLauncher', 'SignInWithApple', 'VpnConnectionDetector', 'REST API'],
+          tags: [{ ru: 'Любимый проект', en: 'Favorite Project' }],
+          links: [
+            {
+              label: 'App Store',
+              url: 'https://apps.apple.com/ru/app/reserve-vpn/id6755535358',
+            },
+          ],
+          period: '2025',
+        },
+      ],
     },
   ],
   education: [

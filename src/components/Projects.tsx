@@ -241,6 +241,7 @@ function ProjectCard({
                   const tagText = tag[language];
                   const isFavorite = tagText === 'Любимый проект' || tagText === 'Favorite Project';
                   const isFirst = tagText === '# Первый Flutter проект' || tagText === 'Первый Flutter проект' || tagText === '# First Flutter Project' || tagText === 'First Flutter Project';
+                  const isFreelance = tagText === '# Первый фриланс проект' || tagText === 'Первый фриланс проект' || tagText === '# First Freelance Project' || tagText === 'First Freelance Project';
                   const isComplex = tagText === '# Самый сложный проект' || tagText === '# Most Complex Project';
                   const hasHash = tagText.startsWith('#');
                   
@@ -252,6 +253,8 @@ function ProjectCard({
                           ? 'project-tag-favorite' 
                           : isFirst
                           ? 'project-tag-first'
+                          : isFreelance
+                          ? 'project-tag-freelance'
                           : isComplex
                           ? 'project-tag-complex'
                           : ''

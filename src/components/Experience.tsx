@@ -5,12 +5,21 @@ import { t } from '../utils/i18n';
 import type { WorkExperience } from '../types';
 import './Experience.css';
 
-const getYear = (period: string): number => {
+const getStartDate = (period: string): number => {
   if (!period) return 0;
+  // Извлекаем дату начала из периода (например, "04.2025 - настоящее время" -> 202504)
+  const match = period.match(/(\d{2})\.(\d{4})/);
+  if (match) {
+    const month = parseInt(match[1], 10);
+    const year = parseInt(match[2], 10);
+    return year * 100 + month; // Формат: YYYYMM для правильной сортировки
+  }
+  // Если формат другой, пытаемся извлечь год
   const years = period.match(/\d{4}/g);
-  if (!years || years.length === 0) return 0;
-  // Берем последний год из периода (например, из "2021-2023" берем 2023)
-  return parseInt(years[years.length - 1], 10);
+  if (years && years.length > 0) {
+    return parseInt(years[0], 10) * 100; // Берем первый год, месяц = 0
+  }
+  return 0;
 };
 
 export function Experience() {
@@ -18,9 +27,9 @@ export function Experience() {
 
   const sortedExperience = useMemo(() => {
     return [...data.workExperience].sort((a, b) => {
-      const yearA = getYear(a.period);
-      const yearB = getYear(b.period);
-      return yearB - yearA; // Сортировка от нового к старому
+      const dateA = getStartDate(a.period);
+      const dateB = getStartDate(b.period);
+      return dateB - dateA; // Сортировка от нового к старому (более новая дата начала выше)
     });
   }, [data.workExperience]);
 
