@@ -90,6 +90,21 @@
   background: var(--color-bg-light);
 }
 
+.education-card.clickable {
+  cursor: pointer;
+}
+
+.education-card.clickable:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-accent-border);
+  background: var(--color-bg-light);
+}
+
+.education-card.clickable:active {
+  transform: translateY(-4px) scale(1.01);
+}
+
 .education-card:hover::before {
   height: 8px;
   opacity: 1;

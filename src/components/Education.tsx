@@ -46,8 +46,18 @@ export function Education() {
 function EducationCard({ education }: { education: Education }) {
   const { language } = useLanguage();
 
+  const handleClick = () => {
+    if (education.url) {
+      window.open(education.url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
-    <div className="education-card">
+    <div 
+      className={`education-card ${education.url ? 'clickable' : ''}`}
+      onClick={education.url ? handleClick : undefined}
+      style={education.url ? { cursor: 'pointer' } : undefined}
+    >
       <div className="education-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M22 10v6M2 10l10-5 10 5-10 5z" />

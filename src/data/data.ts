@@ -703,6 +703,7 @@ export const siteData: SiteData = {
         ru: 'Рязань, Россия',
         en: 'Ryazan, Russia',
       },
+      url: 'https://www.innovationcampus.ru/itschool/',
     },
     {
       id: 'rgrty',
@@ -719,6 +720,7 @@ export const siteData: SiteData = {
         ru: 'Рязань, Россия',
         en: 'Ryazan, Russia',
       },
+      url: 'https://rsreu.ru',
     },
   ],
 };

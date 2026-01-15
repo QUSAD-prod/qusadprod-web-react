@@ -35,6 +35,7 @@ export interface Education {
   specialization: Record<Language, string>;
   period: string;
   location: Record<Language, string>;
+  url?: string;
 }
 
 export interface PersonalInfo {
