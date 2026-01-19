@@ -12,6 +12,7 @@ import sleepyAlarmIcon from '@/assets/images/projects/sleepy-alarm.png';
 import weatherAppIcon from '@/assets/images/projects/weather-app.png';
 import monetrixIcon from '@/assets/images/projects/monetrix.png';
 import reserveIcon from '@/assets/images/projects/reserve.png';
+import avatarImage from '@/assets/images/avatar.jpeg';
 
 export const siteData: SiteData = {
   personalInfo: {
@@ -26,6 +27,7 @@ export const siteData: SiteData = {
     },
     email: 'qusad.prod@gmail.com',
     telegram: '@prodbyqusad',
+    avatar: avatarImage,
     age: 19,
     country: {
       ru: 'Россия',
